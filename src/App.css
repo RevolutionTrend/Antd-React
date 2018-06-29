@@ -1,11 +1,12 @@
 .ant-menu-submenu>.ant-menu {
-    background: transparent !important;
+    background: #9ddde2 !important;
 }
 
 .ant-menu-item-selected {
     background-color: rgba(24, 144, 255, 0.15) !important;
 }
 
-.ant-menu-inline {
-    border-right-color: transparent !important;
+.ant-menu-inline,
+.ant-menu-inline-collapsed {
+    border-right-color: #9ddde2 !important;
 }

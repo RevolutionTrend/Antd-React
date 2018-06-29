@@ -3,11 +3,12 @@ import { Layout } from 'antd';
 import { BrowserRouter } from 'react-router-dom';
 
 import SideBar from './components/SideBar';
+import PageHeader from './components/PageHeader';
 import CustomRouter from './router';
 
 import './App.css';
 
-const { Header, Footer, Content } = Layout
+const { Footer, Content } = Layout
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
         <Layout style={{ height: '100vh' }}>
           <SideBar />
           <Layout>
-            <Header>Header</Header>
+            <PageHeader />
             <Content><CustomRouter /></Content>
             <Footer>Footer</Footer>
           </Layout>
