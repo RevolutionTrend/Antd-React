@@ -6,6 +6,7 @@ import SideBar from './components/SideBar';
 import PageHeader from './components/PageHeader';
 import CustomRouter from './router';
 
+import './custom/bootstrap.css';
 import './App.css';
 
 const { Footer, Content } = Layout
@@ -18,7 +19,11 @@ class App extends Component {
           <SideBar />
           <Layout>
             <PageHeader />
-            <Content><CustomRouter /></Content>
+            <Content style={{ padding: '20px' }}>
+              <div className="panel col-lg-6 col-md-12">
+                <CustomRouter />
+              </div>
+            </Content>
             <Footer>Footer</Footer>
           </Layout>
         </Layout>

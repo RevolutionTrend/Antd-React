@@ -29,19 +29,33 @@ app.use('/', function (req, res, next) {
 });
 
 const devices = [{
-    deviceName: 'u2',
-    icon: 2,
-    interfaceType: 'Ethernet',
+    deviceName: 'Device 1',
+    interfaceType: 'lan',
     ipAddress: '192.168.1.2',
     isActive: 1,
-    macAddress: '00:0a:f7:88:80:b3'
+    macAddress: '00:0a:f7:88:80:b3',
+    group: '运维组'
 }, {
-    deviceName: 'u4',
-    icon: 3,
-    interfaceType: 'Wireless',
+    deviceName: 'Device 2',
+    interfaceType: 'wifi',
     ipAddress: '192.168.1.4',
     isActive: 1,
-    macAddress: '00:0a:f7:88:80:b5'
+    macAddress: '00:0a:f7:88:80:b5',
+    group: '开发组'
+}, {
+    deviceName: 'Device 3',
+    interfaceType: 'lan',
+    ipAddress: '192.168.1.6',
+    isActive: 1,
+    macAddress: '00:0a:f7:88:80:b7',
+    group: '开发组'
+}, {
+    deviceName: 'Device 4',
+    interfaceType: 'lan',
+    ipAddress: '192.168.1.8',
+    isActive: 1,
+    macAddress: '00:0a:f7:88:80:b9',
+    group: '测试组'
 }];
 
 app.get('/device_table.cmd', function (req, res) {
